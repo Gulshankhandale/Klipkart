@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Klipkart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example" style="background-color:#2874F0 ; ">
+      <div class="container" style="max-width: 1000px;">
+        <a class="navbar-brand text-white" href="#" style="font-family: 'Lobster', cursive;">Klipkart</a>
+        <!-- <form role="search">
+          <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
+          <span><i class="bi bi-search"></i></span>
+        </form> -->
+        <!-- Search Bar -->
+        <div class="input-group w-50">
+          <input type="text" class="form-control" placeholder="Search for products" aria-label="Input group example" aria-describedby="basic-addon1">
+          <span class="input-group-text" id="basic-addon1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2874F0" class="bi bi-search" viewBox="0 0 16 16">
+<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+</svg>
+          </span>
+        </div>
+        <!-- Search Bar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button type="button" class="btn btn-primary mx-3" style="font-size:16px ;">Login</button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white active" style="font-family: 'Roboto', sans-serif; font-size: 16px;" aria-current="page" href="#">Become A Seller</a>
+            </li>
+            
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link text-white dropdown-toggle" href="#" style="font-family: 'Roboto', sans-serif;" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" style="font-family: 'Roboto', sans-serif;"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#fff" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+              </svg>
+                            Cart</a>
+            </li>
+          </ul>
+          <!-- <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Header -->
+    <div class="container-fluid text-center product-categories">
+      <div class="row">
+        <div class="col ms-5 me-4" style="max-width: 110px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png" height="64px" width="64px">
+          Top Offers
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png" height="64px" width="64px">
+          Grocery
+        </div>
+        
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png" height="64px" width="64px">
+          Mobiles
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png" height="64px" width="64px">
+          Fashion
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png" height="64px" width="64px">
+          Electronics
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg" height="64px" width="64px">
+          Home
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png" height="64px" width="64px">
+          Appliances
+        </div>
+        <div class="col me-4" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png" height="64px" width="64px">
+          Travel
+        </div>
+        <div class="col" style="max-width: 120px;">
+          <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png" height="64px" width="64px">
+          Beauty,Toys & More
+        </div>
+      </div>
+    </div>
+
+      <!-- <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div> -->
+    </header>
+  </div>
+    <!-- Header -->
+
+    <!-- Marketing Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/6f9a09b7ffde3878.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/b947aa32f6262e95.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/eacb77735ca582b5.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Marketing Carousel -->
+    <div class="b-example-divider"></div>
+
+    <!-- Best Of Electronics -->
+    <!-- <div class="container-fluid mt-3">
+      <div class="float-start"><h3>Best Of Electronics<br><p style="font-size: 15px;">Hello</p></h3></div><br>
+      
+<div class="float-end"><button class="btn btn-primary">VIEW ALL</button></div>
+    </div>
+    <div class="border-bottom"></div> -->
+    <div class="container-fluid" style="margin-bottom: 20px;">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h3 style="margin-left: 58px;">Best Of Electronics<br><p style="font-size: 15px;">Best Of Electronics</p></h3></div>
+      <div class="col-md-3 text-end" style="margin-right:104px ;">
+       
+        <button type="button" class="btn btn-info">VIEW ALL</button>
+      </div>
+    </div>
+
+    <!-- Electronics Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            
+          <!-- Full row product -->
+          <div class="col">
+            <!-- Card -->
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                <h6 class="card-subtitle mb-2 text-muted">Best Of Hair Dryers</h6>
+                <p class="card-text">From Rs.3999</p>
+                <a href="#" class="card-link">Shop Now!</a>
+                
+              </div>
+            </div>
+          </div> <!--col-->
+            <!-- Card -->
+            <!-- Full row product -->
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Monitors</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Premium Laptops</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                 
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">12th Gen Laptops</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              
+        </div> <!-- Row-->
+          <!-- Card -->
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Full row product -->
+            <div class="col">
+          <!-- Card -->
+          <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+              <h6 class="card-subtitle mb-2 text-muted">Core i5 Laptops</h6>
+              <p class="card-text">From Rs.3999</p>
+              <a href="#" class="card-link">Shop Now!</a>
+              
+            </div>
+          </div>
+        </div> <!--col-->
+          <!-- Card -->
+          <!-- Full row product -->
+          <!-- Full row product -->
+          <div class="col">
+            <!-- Card -->
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                <h6 class="card-subtitle mb-2 text-muted">Printers</h6>
+                <p class="card-text">From Rs.3999</p>
+                <a href="#" class="card-link">Shop Now!</a>
+                
+              </div>
+            </div>
+          </div> <!--col-->
+            <!-- Card -->
+            <!-- Full row product -->
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Cameras</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Fans</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              
+              
+        </div> <!-- Row-->
+        </div>
+        <div class="carousel-item">
+          <!-- Card -->
+          <div class="row my-row-1">
+            
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Air Conditioners</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                
+          </div> <!-- Row-->
+            <!-- Card -->
+          <!-- Card -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Electronics Carousel -->
+    
+  </div>
+    <!-- Best Of Electronics -->
+    <div class="b-example-divider"></div>
+
+    <!-- Festival Special -->
+
+        <!-- Best Of Electronics -->
+    <!-- <div class="container-fluid mt-3">
+      <div class="float-start"><h3>Best Of Electronics<br><p style="font-size: 15px;">Hello</p></h3></div><br>
+      
+<div class="float-end"><button class="btn btn-primary">VIEW ALL</button></div>
+    </div>
+    <div class="border-bottom"></div> -->
+    <div class="container-fluid" style="margin-bottom: 20px ;">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h3 style="margin-left:58px ;">Festival Special<br><p style="font-size: 15px;">Festival Special</p></h3></div>
+        <div class="col-md-3 text-end" style="margin-right: 104px;">
+         
+          <button type="button" class="btn btn-info">VIEW ALL</button>
+        </div>
+      </div>
+  
+      <!-- Electronics Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Best Of Hair Dryers</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Monitors</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Premium Laptops</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                   
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">12th Gen Laptops</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                
+          </div> <!-- Row-->
+            <!-- Card -->
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Full row product -->
+              <div class="col">
+            <!-- Card -->
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                <h6 class="card-subtitle mb-2 text-muted">Core i5 Laptops</h6>
+                <p class="card-text">From Rs.3999</p>
+                <a href="#" class="card-link">Shop Now!</a>
+                
+              </div>
+            </div>
+          </div> <!--col-->
+            <!-- Card -->
+            <!-- Full row product -->
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Printers</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Cameras</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Fans</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                
+                
+          </div> <!-- Row-->
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="row my-row-1">
+              
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Air Conditioners</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  
+            </div> <!-- Row-->
+              <!-- Card -->
+            <!-- Card -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Electronics Carousel -->
+      
+    </div>
+      <!-- Best Of Electronics -->
+    <!-- Festival Special -->
+    <div class="b-example-divider"></div>
+
+     <!-- Festival Special -->
+
+        <!-- Best Of Electronics -->
+    <!-- <div class="container-fluid mt-3">
+      <div class="float-start"><h3>Best Of Electronics<br><p style="font-size: 15px;">Hello</p></h3></div><br>
+      
+<div class="float-end"><button class="btn btn-primary">VIEW ALL</button></div>
+    </div>
+    <div class="border-bottom"></div> -->
+    <div class="container-fluid" style="margin-bottom: 20px ;">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"><h3 style="margin-left:58px ;">Pick Your Styles<br><p style="font-size: 15px;">Festival Special</p></h3></div>
+        <div class="col-md-3 text-end" style="margin-right: 104px;">
+         
+          <button type="button" class="btn btn-info">VIEW ALL</button>
+        </div>
+      </div>
+  
+      <!-- Electronics Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Best Of Hair Dryers</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Monitors</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/xif0q/garland/w/f/q/5-cn-33707-5-craftox-d-cor-original-imaghfdyvztgcwpx.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Premium Laptops</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                   
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">12th Gen Laptops</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                
+          </div> <!-- Row-->
+            <!-- Card -->
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Full row product -->
+              <div class="col">
+            <!-- Card -->
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                <h6 class="card-subtitle mb-2 text-muted">Core i5 Laptops</h6>
+                <p class="card-text">From Rs.3999</p>
+                <a href="#" class="card-link">Shop Now!</a>
+                
+              </div>
+            </div>
+          </div> <!--col-->
+            <!-- Card -->
+            <!-- Full row product -->
+            <!-- Full row product -->
+            <div class="col">
+              <!-- Card -->
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                  <h6 class="card-subtitle mb-2 text-muted">Printers</h6>
+                  <p class="card-text">From Rs.3999</p>
+                  <a href="#" class="card-link">Shop Now!</a>
+                  
+                </div>
+              </div>
+            </div> <!--col-->
+              <!-- Card -->
+              <!-- Full row product -->
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Cameras</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Fans</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                
+                
+          </div> <!-- Row-->
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="row my-row-1">
+              
+              <!-- Full row product -->
+              <div class="col">
+                <!-- Card -->
+                <div class="card text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                    <h6 class="card-subtitle mb-2 text-muted">Air Conditioners</h6>
+                    <p class="card-text">From Rs.3999</p>
+                    <a href="#" class="card-link">Shop Now!</a>
+                    
+                  </div>
+                </div>
+              </div> <!--col-->
+                <!-- Card -->
+                <!-- Full row product -->
+                <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  <!-- Full row product -->
+                <div class="col">
+                  <!-- Card -->
+                  <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <img src="https://rukminim1.flixcart.com/image/150/150/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg" alt="">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">From Rs.3999</p>
+                      <a href="#" class="card-link">Shop Now!</a>
+                      
+                    </div>
+                  </div>
+                </div> <!--col-->
+                  <!-- Card -->
+                  <!-- Full row product -->
+                  
+            </div> <!-- Row-->
+              <!-- Card -->
+            <!-- Card -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Electronics Carousel -->
+      
+    </div>
+      <!-- Best Of Electronics -->
+    <!-- Festival Special -->
+
+    <div class="b-example-divider"></div>
+    <div class="container-fluid text-center" style="margin-top: 15px; ">
+      <div class="mytext">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est commodi quaerat nam totam veritatis nisi unde dicta rerum, ratione quae placeat vero nostrum molestiae eligendi mollitia ab eum natus doloremque officia?</p>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+
+
+    <footer >
+      <div class="container-fluid" style="background-color:#172337 ; padding-top: 25px; padding-bottom: 10px;">
+        <div class="container text-white" >
+          <div class="row">
+            <div class="col">
+              <div class=""><p style="color:#597A7D ;">ABOUT</p></div>
+              <div >
+              <a class="text-white" href="" style="text-decoration: none;">Contact Us</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">About Us</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">Careers</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">Klipkart Stories</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">Press</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">Klipkart Wholesale</a></div>
+              <div><a class="text-white" style="text-decoration:none ;" href="">Corporate Information</a></div>
+              
+              
+              
+            </div>
+            <div class="col">
+              <div class=""><p style="color:#597A7D ;">HELP</p></div>
+              <div >
+                <a class="text-white" href="" style="text-decoration: none;">Payments</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Shipping</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Cancellation & Returns</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">FAQ</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Report Infrigment</a></div>
+                
+            </div>
+            <div class="col">
+              <div class=""><p style="color:#597A7D ;">POLICY</p></div>
+              <div >
+                <a class="text-white" href="" style="text-decoration: none;">Return Policy</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Terms Of Use</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Security</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Privacy</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Sitemap</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">EPR Compliance</a></div>
+                
+            </div>
+            <div class="col">
+              <div class=""><p style="color:#597A7D ;">SOCIAL</p></div>
+              <div >
+                <a class="text-white" href="" style="text-decoration: none;">Facebook</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Twitter</a></div>
+                <div><a class="text-white" style="text-decoration:none ;" href="">Youtube</a></div>
+                
+            </div>
+            <div class="col">
+              <div class=""><p style="color:#597A7D ;">Mail Us:</p></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis velit quos.</p>
+            </div>
+            <div class="col">
+              
+              <div class=""><p style="color:#597A7D ;">Registered Office Address:</p></div>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore dolorem veniam dignissimos magnam obcaecati.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="hr"></div>
+      <div class="container-fluid" style="background-color: #172337;padding-left: 95px;padding-right: 129px;">
+        <div class="row">
+          <div class="col text-white">
+            <div>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFB800" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"></path>
+    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"></path>
+  </svg>        Become A Seller
+              </p>
+            </div>
+          </div>
+          <div class="col text-white">
+            <div>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFB800" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+  </svg>        Advertise
+              </p>
+            </div>
+          </div>
+          <div class="col text-white">
+            <div>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFB800" class="bi bi-gift-fill" viewBox="0 0 16 16">
+    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"></path>
+  </svg>      Gift Cards
+              </p>
+            </div>
+          </div>
+          <div class="col text-white">
+            <div>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFB800" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"></path>
+  </svg>        Help Center
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+            </div>
+          </div>
+        </div> <!--Row-->
+
+      </div>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
